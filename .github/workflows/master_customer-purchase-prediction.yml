@@ -58,9 +58,6 @@ jobs:
         with:
           name: python-app
 
-      - name: Debug:List downloaded files
-         run:ls -R
-
       - name: Unzip artifact for deployment
         run:  unzip python-app/release.zip -d deployment
 
