@@ -58,6 +58,9 @@ jobs:
         with:
           name: python-app
 
+      - name: Debug Artifact Contents
+        run: ls -R python-app
+
       - name: Unzip artifact for deployment
         run:  unzip python-app/release.zip -d deployment
       
