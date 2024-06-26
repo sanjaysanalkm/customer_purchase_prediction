@@ -41,9 +41,9 @@ def first(request):
                             'TrafficType': int(TrafficType), 'Weekend': int(weekend), 'New_Visitor':
                             type_visitor[0], 'Other': type_visitor[1], 'Returning_Visitor': type_visitor[2]}
 
-                    df = df.append(df2, ignore_index=True)
-                    # df2 = pd.DataFrame([df2])
-                    # df = pd.concat([df, df2], ignore_index=True)
+                    df2 = pd.DataFrame([df2])
+                    df = pd.concat([df, df2], ignore_index=True)
+                    
                     
                     df = df.astype(float)
                     
