@@ -27,7 +27,12 @@ SECRET_KEY = 'django-insecure-4&f75wn7hotzd457k^q4to$*ez21k2r=c@n-t_3*jd&6ol%nwp
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://customer-pred.azurewebsites.net/']
 
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
